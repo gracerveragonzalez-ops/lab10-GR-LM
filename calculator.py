@@ -10,7 +10,6 @@ def square_root(a):
 
 
 
-
 def hypotenuse(a, b):
   try:
       return math.hypot(a, b)
