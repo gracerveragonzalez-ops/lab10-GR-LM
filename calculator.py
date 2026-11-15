@@ -1,15 +1,31 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
-# First example
-#https://github.com/gracerveragonzalez-ops/lab10-GR-LM.git
+# https://github.com/gracerveragonzalez-ops/lab10-GR-LM
 # Partner 1: Grace Rivera Gonzalez
 # Partner 2: Lucas Michael
 
 import math
+
+def add(a, b):
+   return a + b
+
+def subtract(a, b):
+   return a - b
+
+def mul(a, b):
+    return a * b
+
+
+def div(a, b):
+    if a == 0:
+        raise ZeroDivisionError
+    return b / a
+
+def logarithm(a, b):
+   if a <= 0 or a == 1 or b <= 0:
+       raise ValueError
+   return math.log(b, a)
+
+def exp(a, b):
+    return a ** b
 
 def square_root(a):
   try:
@@ -19,46 +35,10 @@ def square_root(a):
   except ValueError:
       raise
 
-
-
-
 def hypotenuse(a, b):
   try:
       return math.hypot(a, b)
   except ValueError:
       raise
-
-
-def add(a, b):
-   return a + b
-
-
-def subtract(a, b):
-   return a - b
-
-
-
-def multiply(a, b):
-   return a * b
-
-
-def divide(a, b):
-   if a == 0:
-       raise ZeroDivisionError
-   return b / a
-
-
-
-def logarithm(a, b):
-   if a <= 0 or a == 1 or b <= 0:
-       raise ValueError
-   return math.log(b, a)
-
-
-
-
-def exponent(a, b):
-   return a ** b
-
 
 
